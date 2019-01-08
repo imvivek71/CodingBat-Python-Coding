@@ -1,0 +1,19 @@
+"""""
+Given a string, return a new string where "not " has been added to the front. However, 
+if the string already begins with "not", return the string unchanged.
+
+
+not_string('candy') → 'not candy'
+not_string('x') → 'not x'
+not_string('not bad') → 'not bad'
+
+"""
+def not_string(str):
+  no = "not"
+  if len(str)>2:
+     if str[0]!=no[0] and str[1]!=no[1] and str[2]!=no[2]:
+       return no+" "+str
+     else:
+        return str
+  else:
+    return no+" "+str
